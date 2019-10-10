@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 class SearchParams {
     var deficience: Boolean = false
-    var home: String? = null
+    //var home: String? = null
     var area: Int? = null
     var time: Int? = null
     var children: Boolean = false

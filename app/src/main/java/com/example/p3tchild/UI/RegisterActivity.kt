@@ -12,8 +12,10 @@ import com.example.p3tchild.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_register.password_EditText
+import kotlinx.android.synthetic.main.activity_register.progress_bar
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -31,6 +33,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     fun saveForm(view: View) {
+        progress_bar.visibility = View.VISIBLE
         val name = nameEditText.text.toString()
         val email = emailEditText.text.toString()
         val password = password_EditText.text.toString()

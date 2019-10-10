@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".UI.PetFinderFormActivity">
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="70dp"
+        android:minHeight="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -75,7 +87,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <!--LinearLayout
                 android:id="@+id/thirdLinearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -114,7 +126,7 @@
                         android:text="Apartamento" />
                 </RadioGroup>
 
-            </LinearLayout>
+            </LinearLayout-->
 
             <LinearLayout
                 android:id="@+id/fourthLinearLayout"
@@ -145,6 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="viewEnd"
+                    android:text="0/500m"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
@@ -179,6 +192,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="viewEnd"
                     android:textSize="16sp"
+                    android:text="0/24h"
                     android:textStyle="bold"/>
 
             </LinearLayout>

@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".UI.ForgotPasswordActivity"></activity>
         <activity android:name=".UI.PetFinderResultActivity" />
         <activity android:name=".UI.PetFinderFormActivity" />
         <activity android:name=".UI.RegisterActivity" />

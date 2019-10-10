@@ -18,7 +18,8 @@ import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
-
+import kotlinx.android.synthetic.main.activity_login.progress_bar
+import kotlinx.android.synthetic.main.activity_pet_finder_form.*
 
 
 class LoginActivity : AppCompatActivity() {
@@ -31,13 +32,15 @@ class LoginActivity : AppCompatActivity() {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_login)
 
+        progress_bar.visibility = View.INVISIBLE
+
         mAuth = FirebaseAuth.getInstance()
         callbackManager = CallbackManager.Factory.create()
-        updateUI(mAuth.currentUser)
         fbLogin()
     }
 
     fun login(view: View) {
+        progress_bar.visibility = View.VISIBLE
         val email = login_EditText.text.toString()
         val password = password_EditText.text.toString()
 
@@ -112,6 +115,7 @@ class LoginActivity : AppCompatActivity() {
     private fun updateUI(user: FirebaseUser?) {
         if (user != null) {
             val intent = Intent(this, PetFinderFormActivity::class.java)
+            progress_bar.visibility = View.INVISIBLE
             startActivity(intent)
         }
     }

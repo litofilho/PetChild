@@ -8,6 +8,7 @@ import android.view.View
 import android.view.Window
 import android.widget.TextView
 import androidx.constraintlayout.widget.Constraints
+import androidx.core.view.isInvisible
 import com.example.p3tchild.Model.Breed
 import com.example.p3tchild.Model.SearchParams
 import com.example.p3tchild.R
@@ -25,6 +26,8 @@ class PetFinderResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet_finder_result)
+
+        noResultsConstraintLayout.visibility = View.INVISIBLE
 
         params = intent.getStringExtra("params")!!.toString()
         db = FirebaseFirestore.getInstance()
@@ -60,9 +63,16 @@ class PetFinderResultActivity : AppCompatActivity() {
     }
 
     private fun renderList(filteredList: List<Breed>) {
-        val adapter = BreedAdapter(baseContext, filteredList)
-        breedsListView.adapter = adapter
-        breedsListView.divider = null
+        explainTextView.text = "Esses são os Pets que mais combinam com você! Quanto maior o Score, mais vocês combinam!"
+        progress_bar.visibility = View.GONE
+        val list = filteredList.filter { it.Score!! > 0 }
+        if(list.size > 0) {
+            val adapter = BreedAdapter(baseContext, list)
+            breedsListView.adapter = adapter
+            breedsListView.divider = null
+        }else{
+            noResultsConstraintLayout.visibility = View.VISIBLE
+        }
     }
 
     private fun calculateScore(breeds: List<Breed>, params: SearchParams): List<Breed> {
