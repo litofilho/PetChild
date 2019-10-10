@@ -61,6 +61,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="Fechar"
+                android:background="#ffccbc"
+                android:textColor="@color/Background_Apk"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/resumeScrollView" />
