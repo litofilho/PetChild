@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">P3tChild</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="signin">Entrar</string>
+    <string name="register">CADASTRE-SE</string>
+    <string name="forgot_password">Esqueci minha senha</string>
+    <string name="facebook_app_id">507005146521145</string> <string name="fb_login_protocol_scheme">fb507005146521145</string>
+
+</resources>

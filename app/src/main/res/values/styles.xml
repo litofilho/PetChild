@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FacebookLoginButton1">
+        <item name="android:textSize">@dimen/smallTxtSize</item>
+        <item name="android:background">@drawable/facebook_signin_btn</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="GoogleLoginButton">
+        <item name="android:textSize">@dimen/smallTxtSize</item>
+        <item name="android:background">@drawable/google_login</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="TextInputOrangeLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#F04F24</item>
+        <item name="boxStrokeWidth">2dp</item>
+
+    </style>
+
+    <style name="TexTButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="colorButtonNormal">#FFFFFF</item>
+        <item name="android:textColor">#ff5722</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+    <style name="ButtonOrange" parent="Widget.MaterialComponents.Button">
+        <item name="boxStrokeColor">#FF5722</item>
+    </style>
+
+
+    <style name="Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">#FF5722</item>
+        <item name="android:textColor">#FF5722</item>
+    </style>
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">#ff5722</item>
+        <item name="android:color">#FFFFFF</item>
+
+    </style>
+    <style name="Button1" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">#ffccbc</item>
+        <item name="android:textColor">#ff5722</item>
+    </style>
+
+    <dimen name="smallTxtSize">20dp</dimen>
+
+</resources>

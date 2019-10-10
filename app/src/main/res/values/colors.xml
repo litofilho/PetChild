@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Background_Apk">#F04F24</color>
+    <color name="NameApkBackground">#F7AC98</color>
+    <color name="Cor_PetChild">#F7AC98</color>
+    <color name="Cor_Perfeito">#FD9124</color>
+    <color name="Toggle_Button">#FCE8E3</color>
+    <color name="Nome_Raça">#F04F24</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#F04F24</color>
+</resources>
